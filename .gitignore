@@ -16,9 +16,36 @@ __pycache__/
 *.py[cod]
 test-results/
 playwright-report/
-# Generated captures and prior release ZIPs are not application source.
-artifacts/
+# Exclude bulk captures/old release archives; publish the current review evidence
+# referenced by the project README and motion/publishing reports.
+artifacts/*
+!artifacts/player-motion/
+artifacts/player-motion/*
+!artifacts/player-motion/motion-contact-sheet.jpg
+!artifacts/player-motion/player-motion-review.mp4
+!artifacts/player-motion/game-*-side.png
+!artifacts/player-motion/game-grounded.png
+!artifacts/player-motion/exported-contact.json
+!artifacts/player-motion/native-contact.json
+!artifacts/player-motion/preview-results.json
+!artifacts/player-motion/unit.log
+!artifacts/player-motion/browser.log
+!artifacts/player-motion/build.log
+!artifacts/player-motion/standalone.log
+!artifacts/open-world-browser-results.json
+!artifacts/world-standalone-results.json
+!artifacts/publishing/
+artifacts/publishing/*
+!artifacts/publishing/preflight.json
+!artifacts/publishing/staged-preflight.json
+!artifacts/publishing/build.log
+!artifacts/publishing/tests.log
+!artifacts/publishing/hosted-results.json
+!artifacts/publishing/hosted-desktop.png
+!artifacts/publishing/hosted-mobile.png
 # Preserve the authoritative .blend files, not automatic save backups.
 *.blend[0-9]
 # Downloaded source archives are redundant with attributed extracted references.
 blender/upgrade/reference-base/*.zip
+.vercel
+.env*

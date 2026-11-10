@@ -1,0 +1,53 @@
+SURVIVOR RUNS 0.3.1 - SOFTWARE AND ASSET CREDITS
+
+Zombie De Goma by julianmurcia245
+https://sketchfab.com/julianmurcia245
+https://sketchfab.com/3d-models/zombie-de-goma-d0da88595c6b47129170937d1e442733
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+Changes: standing-scale normalization, gameplay clip aliases and height variants.
+The supplied geometry, texture, skin and original animation package are retained.
+
+Zombie by piRat / GrimZu
+https://sketchfab.com/GrimZu
+https://sketchfab.com/3d-models/zombie-0541416bd635486f95cb3d44f8f676c1
+License: Creative Commons Attribution 4.0 International
+https://creativecommons.org/licenses/by/4.0/
+Changes: scale normalization, new skeletal skin/weights, locomotion, attack and
+reaction/death clips; the supplied head, clothing, boot geometry and maps remain.
+
+Rugged Cowboy - supplied by the project owner
+Apparent original publisher: Galaxy Abundant
+https://sketchfab.com/3d-models/ga-free-451-rugged-cowboy-high-poly-7a8b66096bdd454ebc5aa99e6ff388ce
+The owner explicitly confirmed permission to publicly redistribute the supplied
+model and derivative game GLBs on 2026-11-10, for personal/non-commercial use.
+The original publisher's exact license is not independently verified here; this
+notice does not relicense that asset or grant third parties additional rights.
+Changes: mesh simplification, 18-bone weighted rig, original player animations,
+planted-foot/directional locomotion, jump/slide, and runtime texture resizing.
+
+Historical human groundwork: CC0 MakeHuman hm08 and OnlyTheGhosts' CC0 skin maps.
+Only graphical data, not MakeHuman application code, is included. Dogs, weapons,
+environment props, procedural world detail and synthesized audio are authored for
+this project. Source provenance and modifications are retained in the repository.
+
+Three.js 0.180.0 and its bundled addons - MIT License
+Copyright (c) 2010-2025 three.js authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

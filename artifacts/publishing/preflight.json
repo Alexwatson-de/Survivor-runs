@@ -1,0 +1,43 @@
+{
+  "candidateFiles": 347,
+  "candidateBytes": 314347305,
+  "credentialFindings": [],
+  "filesAtOrAbove100MiB": [],
+  "largestFiles": [
+    {
+      "path": "blender/open-world/survivor-runs-player-motion.blend",
+      "bytes": 45956139
+    },
+    {
+      "path": "blender/open-world/survivor-runs-supplied-actors.blend",
+      "bytes": 43356310
+    },
+    {
+      "path": "blender/survivor-runs-production.blend",
+      "bytes": 19266127
+    },
+    {
+      "path": "public/assets/zombie_military.glb",
+      "bytes": 8810196
+    },
+    {
+      "path": "public/assets/zombie_walker.glb",
+      "bytes": 8732948
+    },
+    {
+      "path": "public/assets/zombie_runner.glb",
+      "bytes": 8715276
+    },
+    {
+      "path": "public/assets/zombie_stalker.glb",
+      "bytes": 8019576
+    },
+    {
+      "path": "public/assets/zombie_brute.glb",
+      "bytes": 8016760
+    }
+  ],
+  "vercelConfigParsed": true,
+  "remoteUploadAttempted": false,
+  "deployed": false
+}

@@ -1,0 +1,658 @@
+{
+  "config": {
+    "configFile": "/Users/softage/Designer Projects/starter/ashfall-run/playwright.world.config.js",
+    "rootDir": "/Users/softage/Designer Projects/starter/ashfall-run/tests/world-browser",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "artifacts/open-world-browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/softage/Designer Projects/starter/ashfall-run/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/Users/softage/Designer Projects/starter/ashfall-run/tests/world-browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      },
+      {
+        "outputDir": "/Users/softage/Designer Projects/starter/ashfall-run/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/softage/Designer Projects/starter/ashfall-run/tests/world-browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 240000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "motion.spec.js",
+      "file": "motion.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real movement selects matching run/walk/sprint and stops stepping against cover",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5713,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:09:45.213Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-c3340f4439a8dfb97af5",
+          "file": "motion.spec.js",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "actual space jump tracks flight, has asymmetric legs, and lands without restarting a jump loop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:09:53.570Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-d974425d786cb4fec5e8",
+          "file": "motion.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "real Ctrl slide coasts on the surface in a low reclined non-gait pose",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2882,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:09:57.447Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-341ed47e61fa1793b554",
+          "file": "motion.spec.js",
+          "line": 111,
+          "column": 1
+        },
+        {
+          "title": "exported skinned boots plant in world space; slide height and jump fit the collider/reference",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2267,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:10:00.350Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "exported-motion-measurements",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzIjogNDYxLAogICJjb250YWN0cyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAid2FsayIsCiAgICAgICJkcmlmdE1tIjogMC4xNTA1NjgzMzM3MTkxMjU3MwogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAicnVuIiwKICAgICAgImRyaWZ0TW0iOiAwLjc3MDQzMjQ2NDQxNDkxNTIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInNwcmludCIsCiAgICAgICJkcmlmdE1tIjogMi41NzYwOTk4ODAzNDYzMDU4CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJ3YWxrX2JhY2siLAogICAgICAiZHJpZnRNbSI6IDAuMTQ4MDgzNjY0MzE1NjY0NzIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInJ1bl9yaWdodCIsCiAgICAgICJkcmlmdE1tIjogMC45NTU2NDAyODAzNjEzNTM1CiAgICB9CiAgXSwKICAic2xpZGVUb3BNbSI6IDg2Mi4zNzk1OTQ2MTk3MDYzLAogICJzbGlkZUJvdHRvbU1tIjogLTI0LjExNTEzODQ1ODgyMDAyNCwKICAianVtcEZvb3RTZXBhcmF0aW9uTW0iOiA2MTAuMDAzNTA4MzA1NDg4LAogICJqdW1wRm9vdEhlaWdodERpZmZlcmVuY2VNbSI6IDIwOS45OTg1MzYwODkzMTM2Mwp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-e68484dfebec3739d6ba",
+          "file": "motion.spec.js",
+          "line": 146,
+          "column": 1
+        },
+        {
+          "title": "real movement selects matching run/walk/sprint and stops stepping against cover",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16903,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:10:55.111Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-634c8fee8f727b05ecf3",
+          "file": "motion.spec.js",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "actual space jump tracks flight, has asymmetric legs, and lands without restarting a jump loop",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10201,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:11:14.433Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-45cc59cccf4a7c97bc95",
+          "file": "motion.spec.js",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "real Ctrl slide coasts on the surface in a low reclined non-gait pose",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8886,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:11:24.811Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-9f58d44586d167f16189",
+          "file": "motion.spec.js",
+          "line": 111,
+          "column": 1
+        },
+        {
+          "title": "exported skinned boots plant in world space; slide height and jump fit the collider/reference",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:11:33.764Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "exported-motion-measurements",
+                      "contentType": "application/json",
+                      "body": "ewogICJzYW1wbGVzIjogNDYxLAogICJjb250YWN0cyI6IFsKICAgIHsKICAgICAgIm5hbWUiOiAid2FsayIsCiAgICAgICJkcmlmdE1tIjogMC4xNTA1NjgzMzM3MTkxMjU3MwogICAgfSwKICAgIHsKICAgICAgIm5hbWUiOiAicnVuIiwKICAgICAgImRyaWZ0TW0iOiAwLjc3MDQzMjQ2NDQxNDkxNTIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInNwcmludCIsCiAgICAgICJkcmlmdE1tIjogMi41NzYwOTk4ODAzNDYzMDU4CiAgICB9LAogICAgewogICAgICAibmFtZSI6ICJ3YWxrX2JhY2siLAogICAgICAiZHJpZnRNbSI6IDAuMTQ4MDgzNjY0MzE1NjY0NzIKICAgIH0sCiAgICB7CiAgICAgICJuYW1lIjogInJ1bl9yaWdodCIsCiAgICAgICJkcmlmdE1tIjogMC45NTU2NDAyODAzNjEzNTM1CiAgICB9CiAgXSwKICAic2xpZGVUb3BNbSI6IDg2Mi4zNzk1OTQ2MTk3MDYzLAogICJzbGlkZUJvdHRvbU1tIjogLTI0LjExNTEzODQ1ODgyMDAyNCwKICAianVtcEZvb3RTZXBhcmF0aW9uTW0iOiA2MTAuMDAzNTA4MzA1NDg4LAogICJqdW1wRm9vdEhlaWdodERpZmZlcmVuY2VNbSI6IDIwOS45OTg1MzYwODkzMTM2Mwp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ff7637d3e5d3b9e2ba70-b4ce281120a385079e79",
+          "file": "motion.spec.js",
+          "line": 146,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "world.spec.js",
+      "file": "world.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real keyboard: stop, forward, backward, strafe, turn, map, manual fire/reload and pause",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23146,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:10:02.695Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-d4c16603d2cbbcfad619",
+          "file": "world.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "actual imported actors: skin weights, separate clones, canonical clips, no missing textures",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6625,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:10:25.876Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-02d3f74e9b4bf0b656b8",
+          "file": "world.spec.js",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "fixture review: connected districts, exact shared scenery collision, settings and enemy model variants",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9259,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:10:32.533Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-ca99d582f4eb5d366989",
+          "file": "world.spec.js",
+          "line": 148,
+          "column": 1
+        },
+        {
+          "title": "mobile layout and independent two-axis stick / camera drag / fire / release",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9969,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:10:41.832Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-fd287ac7f948e86bfce2",
+          "file": "world.spec.js",
+          "line": 197,
+          "column": 1
+        },
+        {
+          "title": "real keyboard: stop, forward, backward, strafe, turn, map, manual fire/reload and pause",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25720,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:11:42.422Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-bb3d58d66d09e16d080a",
+          "file": "world.spec.js",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "actual imported actors: skin weights, separate clones, canonical clips, no missing textures",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12670,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:12:08.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-b8b8cb49499a19414728",
+          "file": "world.spec.js",
+          "line": 86,
+          "column": 1
+        },
+        {
+          "title": "fixture review: connected districts, exact shared scenery collision, settings and enemy model variants",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15868,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:12:21.015Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-b561d3de5e8107a586c3",
+          "file": "world.spec.js",
+          "line": 148,
+          "column": 1
+        },
+        {
+          "title": "mobile layout and independent two-axis stick / camera drag / fire / release",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 240000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15136,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T08:12:37.170Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3f7932018a55f5aa1278-e0b806b1c06acee1be7a",
+          "file": "world.spec.js",
+          "line": 197,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T08:09:44.711Z",
+    "duration": 188351.416,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

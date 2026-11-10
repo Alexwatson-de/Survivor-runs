@@ -1,0 +1,25 @@
+
+> survivor-runs@0.3.0 test:browser
+> playwright test -c playwright.world.config.js
+
+
+Running 16 tests using 1 worker
+
+  ✓   1 [chrome] › tests/world-browser/motion.spec.js:16:1 › real movement selects matching run/walk/sprint and stops stepping against cover (5.7s)
+  ✓   2 [chrome] › tests/world-browser/motion.spec.js:64:1 › actual space jump tracks flight, has asymmetric legs, and lands without restarting a jump loop (3.9s)
+  ✓   3 [chrome] › tests/world-browser/motion.spec.js:111:1 › real Ctrl slide coasts on the surface in a low reclined non-gait pose (2.9s)
+  ✓   4 [chrome] › tests/world-browser/motion.spec.js:146:1 › exported skinned boots plant in world space; slide height and jump fit the collider/reference (2.3s)
+  ✓   5 [chrome] › tests/world-browser/world.spec.js:26:1 › real keyboard: stop, forward, backward, strafe, turn, map, manual fire/reload and pause (23.1s)
+  ✓   6 [chrome] › tests/world-browser/world.spec.js:86:1 › actual imported actors: skin weights, separate clones, canonical clips, no missing textures (6.6s)
+  ✓   7 [chrome] › tests/world-browser/world.spec.js:148:1 › fixture review: connected districts, exact shared scenery collision, settings and enemy model variants (9.3s)
+  ✓   8 [chrome] › tests/world-browser/world.spec.js:197:1 › mobile layout and independent two-axis stick / camera drag / fire / release (10.0s)
+  ✓   9 [webkit] › tests/world-browser/motion.spec.js:16:1 › real movement selects matching run/walk/sprint and stops stepping against cover (16.9s)
+  ✓  10 [webkit] › tests/world-browser/motion.spec.js:64:1 › actual space jump tracks flight, has asymmetric legs, and lands without restarting a jump loop (10.2s)
+  ✓  11 [webkit] › tests/world-browser/motion.spec.js:111:1 › real Ctrl slide coasts on the surface in a low reclined non-gait pose (8.9s)
+  ✓  12 [webkit] › tests/world-browser/motion.spec.js:146:1 › exported skinned boots plant in world space; slide height and jump fit the collider/reference (8.4s)
+  ✓  13 [webkit] › tests/world-browser/world.spec.js:26:1 › real keyboard: stop, forward, backward, strafe, turn, map, manual fire/reload and pause (25.7s)
+  ✓  14 [webkit] › tests/world-browser/world.spec.js:86:1 › actual imported actors: skin weights, separate clones, canonical clips, no missing textures (12.7s)
+  ✓  15 [webkit] › tests/world-browser/world.spec.js:148:1 › fixture review: connected districts, exact shared scenery collision, settings and enemy model variants (15.9s)
+  ✓  16 [webkit] › tests/world-browser/world.spec.js:197:1 › mobile layout and independent two-axis stick / camera drag / fire / release (15.1s)
+
+  16 passed (3.1m)

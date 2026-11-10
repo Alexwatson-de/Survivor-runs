@@ -1,0 +1,86 @@
+{
+  "clips": [
+    "walk",
+    "jump",
+    "land",
+    "walk_fr",
+    "walk_right",
+    "walk_br",
+    "walk_back",
+    "walk_bl",
+    "walk_left",
+    "walk_fl",
+    "idle",
+    "shoot",
+    "reload",
+    "dodge",
+    "stumble",
+    "hurt",
+    "death",
+    "run",
+    "run_fr",
+    "run_right",
+    "run_br",
+    "run_back",
+    "run_bl",
+    "run_left",
+    "run_fl",
+    "sprint",
+    "slide"
+  ],
+  "bounds": {
+    "slide": {
+      "minYmm": -24.115138458820024,
+      "maxYmm": 862.3795946197063
+    },
+    "jump": {
+      "minYmm": 124.68719634156231,
+      "maxYmm": 1672.9437211889044
+    },
+    "walk": {
+      "minYmm": -24.0663906614315,
+      "maxYmm": 1669.4606795652044
+    },
+    "run": {
+      "minYmm": -23.994398117926966,
+      "maxYmm": 1554.612368492056
+    }
+  },
+  "contacts": [
+    {
+      "clip": "walk",
+      "maxSoleDriftMm": 0.15056833371912573
+    },
+    {
+      "clip": "run",
+      "maxSoleDriftMm": 0.7704324644149152
+    },
+    {
+      "clip": "sprint",
+      "maxSoleDriftMm": 2.5760998803463058
+    },
+    {
+      "clip": "walk_back",
+      "maxSoleDriftMm": 0.14808366431566472
+    },
+    {
+      "clip": "run_right",
+      "maxSoleDriftMm": 0.9556402803613535
+    }
+  ],
+  "soleSamples": 461,
+  "jumpFeet": {
+    "left": [
+      0.11500155422888117,
+      0.5059974825498832,
+      -0.3600012318528841
+    ],
+    "right": [
+      -0.11499990523351213,
+      0.29599894646056957,
+      0.25000227645260387
+    ],
+    "foreAftSeparationMm": 610.003508305488,
+    "heightDifferenceMm": 209.99853608931363
+  }
+}

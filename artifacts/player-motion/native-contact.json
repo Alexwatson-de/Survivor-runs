@@ -1,0 +1,95 @@
+{
+  "gaits": {
+    "walk": {
+      "stride": 1.1,
+      "duration": 0.82,
+      "stance": 0.62,
+      "lift": 0.105
+    },
+    "run": {
+      "stride": 2.4,
+      "duration": 0.66,
+      "stance": 0.4,
+      "lift": 0.28
+    },
+    "sprint": {
+      "stride": 3.0,
+      "duration": 0.56,
+      "stance": 0.31,
+      "lift": 0.34
+    }
+  },
+  "stance_contact": [
+    {
+      "clip": "walk",
+      "stance_root_cancel_residual_mm": 0.0009384182985921972,
+      "samples": 30
+    },
+    {
+      "clip": "run",
+      "stance_root_cancel_residual_mm": 0.0016543141378989185,
+      "samples": 16
+    },
+    {
+      "clip": "sprint",
+      "stance_root_cancel_residual_mm": 0.0017919846752764944,
+      "samples": 11
+    }
+  ],
+  "ik_errors": [
+    {
+      "label": "run",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "run_fr",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "run_right",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "run_br",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "run_back",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "run_bl",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "run_left",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "run_fl",
+      "frames": 41,
+      "duration": 0.6666666666666666,
+      "max_ik_reach_error_mm": 0
+    },
+    {
+      "label": "sprint",
+      "frames": 35,
+      "duration": 0.5666666666666667,
+      "max_ik_reach_error_mm": 0
+    }
+  ]
+}

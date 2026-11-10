@@ -1,6 +1,14 @@
 # Third-party notices
 
-Survivor Runs 0.2 bundles Three.js 0.180.0 and its GLTFLoader, SkeletonUtils, BufferGeometryUtils and postprocessing addons, under the MIT license below. Vite and Playwright are build/test dependencies recorded in the package lock.
+Survivor Runs 0.3.1 bundles Three.js 0.180.0 and its GLTFLoader, SkeletonUtils, BufferGeometryUtils and postprocessing addons, under the MIT license below. Vite and Playwright are build/test dependencies recorded in the package lock.
+
+The current player and two zombie designs are the supplied models documented in
+[their provenance record](blender/open-world/SOURCES.md). Zombie De Goma by
+julianmurcia245 and Zombie by piRat/GrimZu retain CC BY 4.0 attribution, source links
+and modification notices. The cowboy is included under the owner's explicit
+redistribution-rights confirmation; no publisher license is invented or blanket
+relicense applied to it. [Publicly served credits](public/assets/credits.txt) ship
+with the built website and are linked from Settings.
 
 Human anatomy is derived from the **CC0 MakeHuman hm08 base mesh**, and human skin detail from **OnlyTheGhosts' CC0 middle-age Eurasian skin** in MakeHuman Community's official skins01 CC0 pack. Only graphical assets are used, not MakeHuman's AGPL application code. Full sources, asset licenses and original modifications are recorded in [asset provenance](blender/upgrade/SOURCES.md). Dog/weapon/environment geometry, rigs/animations, other PBR maps, game code and synthesized audio are project-authored. User-supplied reference-image pixels are not included in runtime assets.
 

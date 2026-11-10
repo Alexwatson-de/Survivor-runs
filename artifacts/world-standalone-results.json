@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "journey": "normal production controls",
+  "qaHook": false,
+  "controls": "real keyboard, mouse and DOM buttons",
+  "rendering": "low",
+  "errors": []
+}
