@@ -7,6 +7,13 @@ this static-game design.
 
 ## Current state: prepared locally, NOT uploaded or deployed
 
+The project now has a **local-only Git source snapshot** `5e4f6df` on branch
+`publish/survivor-runs-0.3.1`, with the credential-free origin URL set to the
+requested repository. Its 347 staged files passed the credential-pattern and
+100-MiB checks before commit. No remote branch was fetched, overwritten or pushed;
+remote visibility/default history remain unknown because the API is unreachable.
+The branch name deliberately avoids assuming the remote main branch is empty.
+
 - Added Git ignore rules for credentials, provider state, dependencies, caches,
   auto-save backups and generated release archives.
 - Added a Vercel ignore file so Blender workshops, recordings, tests, archives and
@@ -30,6 +37,8 @@ whoami/teams requests also failed with network-unreachable diagnostics. Ordinary
 IPv4 checks did not resolve this. One unauthenticated curl request to the Vercel
 API root succeeded, but authenticated CLI requests remained unavailable; that
 alone is not evidence that deployment works or that an account is authenticated.
+After receiving the owner's confirmations, final direct requests to the official
+repository API and Vercel user API still returned connection errors / HTTP 000.
 
 Restore normal connectivity to the official GitHub and Vercel endpoints before
 retrying. Do not weaken TLS verification, change account billing, introduce a

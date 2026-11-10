@@ -52,7 +52,8 @@ The browser tests use the current local production host on port 5190. Historical
 0.2 browser tests are retained under the explicitly named `test:browser:legacy`
 script; their forward-running assumptions are not the current acceptance contract.
 The previous 0.2 download archive is historical and does NOT contain this revision.
-No new redistributable release is supplied because the cowboy license is unverified.
+No new public release archive is claimed. Owner redistribution permission is now
+confirmed; the GitHub/Vercel release is still waiting on working provider access.
 
 ## What the request means in this version
 
