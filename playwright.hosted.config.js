@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'./tests/hosted',timeout:180000,workers:1,retries:0,reporter:[['list'],['json',{outputFile:'artifacts/publishing/hosted-results.json'}]],use:{baseURL:process.env.SURVIVOR_URL||'https://survivor-runs.vercel.app',viewport:{width:1280,height:720},headless:true,screenshot:'only-on-failure',trace:'off'},projects:[{name:'chrome',use:{browserName:'chromium',channel:'chrome'}},{name:'webkit',use:{browserName:'webkit'}}]});

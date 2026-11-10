@@ -19,19 +19,27 @@ in the existing Ashfall Run / Survivor Runs project. The earlier 0.2 revision
 removed discrete lanes but still auto-ran down a curved corridor. This revision
 removes that corridor and forced forward motion rather than merely renaming it.
 
-## Play locally
+## Play online
 
-**GitHub/Vercel publishing requested:** [publishing status](PUBLISHING.md).
-Deployment configuration is prepared. The owner confirmed personal/non-commercial
-use and cowboy redistribution rights; remote upload/hosting remains blocked by
-outbound GitHub/Vercel connectivity and unverified provider authentication.
-No public release URL or successful repository upload is claimed.
+**[Play Survivor Runs](https://survivor-runs.vercel.app)** - the current 0.3.1
+browser game, publicly hosted on the owner's existing Vercel Hobby account.
+**[GitHub source and editable artwork](https://github.com/Alexwatson-de/Survivor-runs)**.
 
-**http://127.0.0.1:5190** - current optimized build at the same origin used before,
-so existing browser-local progress remains available. No public deployment.
+The owner confirmed personal/non-commercial use and model redistribution permission.
+No billing/plan upgrade was made. This is static browser hosting, not a multiplayer
+server or a native installer. [Publishing and verification report](PUBLISHING.md).
+Full [software/asset credits](https://survivor-runs.vercel.app/assets/credits.txt)
+are also linked from in-game Settings.
 
-[Play Survivor Runs](Play-Survivor-Runs.command) launches the bundled local host.
-Requires Node.js 22+; installed npm dependencies are not needed to serve the build.
+Progress stays in each browser/site's local storage. Existing localhost records
+remain intact but are not automatically transferred to the new HTTPS origin.
+
+## Run locally
+
+The development workspace keeps **http://127.0.0.1:5190** and its existing local
+records. For a fresh GitHub clone, run `npm ci` and `npm run build` first, then
+[Play Survivor Runs](Play-Survivor-Runs.command) or the standalone host below.
+Requires Node.js 22+; serving an already-built game needs no npm dependencies.
 Opening HTML directly through a file URL cannot load glTF/module assets.
 
 ```sh
@@ -52,8 +60,8 @@ The browser tests use the current local production host on port 5190. Historical
 0.2 browser tests are retained under the explicitly named `test:browser:legacy`
 script; their forward-running assumptions are not the current acceptance contract.
 The previous 0.2 download archive is historical and does NOT contain this revision.
-No new public release archive is claimed. Owner redistribution permission is now
-confirmed; the GitHub/Vercel release is still waiting on working provider access.
+The current game is available at the public website and in the GitHub source
+repository; the old 0.2 ZIP is not the current deliverable.
 
 ## What the request means in this version
 
@@ -98,8 +106,10 @@ supply/civilian markers. Starting-location unlocks and old save keys are retaine
 [model sources, licenses and changes](blender/open-world/SOURCES.md).
 
 Both zombie packages identify CC BY 4.0 authors/source links in their metadata;
-credits are also exposed in in-game Settings. Cowboy redistribution rights were
-not supplied or embedded. Local owner preview only until those rights are checked.
+credits and modification notices are exposed in in-game Settings/public credits.
+The cowboy has no embedded license, but the owner explicitly confirmed public
+redistribution permission; the publisher's exact license is not independently
+verified or replaced with an invented one. See the recorded publishing permission.
 Original downloaded files and the old production blend are not overwritten.
 
 ### Environment and retained gameplay
@@ -144,8 +154,10 @@ track. Close contacts have attack windups and walls cannot be walked through.
 
 ## Verification and limits
 
-[Current 0.3 test report](TESTING_0.3.md) separates unit/asset checks, actual keyboard
-play, spatial fixtures, touch emulation and outstanding physical-device acceptance.
+[Current motion verification](PLAYER_MOTION_0.3.1.md) and
+[public hosting verification](PUBLISHING.md) separate unit/asset checks, actual
+keyboard play, spatial fixtures, phone emulation and outstanding physical-device
+acceptance. The [0.3 foundation report](TESTING_0.3.md),
 [0.2 testing](TESTING_0.2.md) and [older testing](TESTING.md) are historical evidence,
 not proof that their runner-specific assumptions still describe the current game.
 
@@ -153,5 +165,6 @@ This is a **finite, mostly level, connected exploration map**, not an infinite w
 or a complete survival/crafting RPG. Buildings are currently exterior cover, not
 fully explorable interiors. New static-model skinning/animation needs human art/feel
 review. Physical phones, broad hardware FPS/thermal testing, long soaks and human
-listening remain unverified. Local single-player browser game only: no multiplayer,
-cloud saves, native installer, new accounts, billing or public hosting changes.
+listening remain unverified. Single-player browser game with public static hosting:
+no multiplayer backend, cloud saves, native installer, new player accounts, paid
+plan upgrade or changes to other applications/deployments.

@@ -41,8 +41,10 @@ artifacts/publishing/*
 !artifacts/publishing/build.log
 !artifacts/publishing/tests.log
 !artifacts/publishing/hosted-results.json
-!artifacts/publishing/hosted-desktop.png
-!artifacts/publishing/hosted-mobile.png
+!artifacts/publishing/hosted-asset-parity.json
+!artifacts/publishing/hosted-browser.log
+!artifacts/publishing/hosted-*-desktop.png
+!artifacts/publishing/hosted-*-mobile.png
 # Preserve the authoritative .blend files, not automatic save backups.
 *.blend[0-9]
 # Downloaded source archives are redundant with attributed extracted references.

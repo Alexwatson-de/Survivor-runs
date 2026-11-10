@@ -1,0 +1,974 @@
+{
+  "origin": "https://survivor-runs.vercel.app",
+  "passed": true,
+  "revision": "0.3.1",
+  "verifiedFileCount": 188,
+  "verifiedBytes": 52003553,
+  "exactLocalBuildSha256Parity": true,
+  "credentialPatternsFound": false,
+  "securityHeaders": {
+    "nosniff": "nosniff",
+    "frame": "DENY",
+    "referrer": "strict-origin-when-cross-origin"
+  },
+  "exposure": [
+    {
+      "path": "/.env",
+      "status": 404
+    },
+    {
+      "path": "/.env.local",
+      "status": 404
+    },
+    {
+      "path": "/.git/config",
+      "status": 404
+    },
+    {
+      "path": "/.vercel/project.json",
+      "status": 404
+    }
+  ],
+  "files": [
+    {
+      "path": "assets/credits.txt",
+      "bytes": 2975,
+      "sha256": "8ebd672da2eab933ceebe4c329e57bce2e4f3f9c5ab83d92f866a008ccc06322"
+    },
+    {
+      "path": "assets/index-D93tFVJq.js",
+      "bytes": 682159,
+      "sha256": "440506ec19897b05b41457738e93aa1a9d78a585459a2843e08b355baf435557"
+    },
+    {
+      "path": "assets/index-nePowfQa.css",
+      "bytes": 21613,
+      "sha256": "84e72a9b80d616918b8502d7f8ba2c32bd8d2fdd8995eeecbfb08ba93cf38ac3"
+    },
+    {
+      "path": "assets/manifest.json",
+      "bytes": 1613,
+      "sha256": "1d79cd8b285331ab85553c80bd831fd8de32177911cb4b3366d78c9126a3c322"
+    },
+    {
+      "path": "assets/particle-smoke.png",
+      "bytes": 50198,
+      "sha256": "38782db01886f356e480765b4f46d8499a0fb853869b09c960862705a02d957a"
+    },
+    {
+      "path": "assets/runtime/barrel.bin",
+      "bytes": 8880,
+      "sha256": "4ceb65559509ac0fca3b05e678957cafd730893a02f6ba49b3b1ec34b35769b9"
+    },
+    {
+      "path": "assets/runtime/barrel.gltf",
+      "bytes": 5125,
+      "sha256": "b1d0d91a97aac47d48f283607081b4b9d70410789740d7063207f0d9d23f00eb"
+    },
+    {
+      "path": "assets/runtime/barricade.bin",
+      "bytes": 25712,
+      "sha256": "655eb2e9943aeff2a68bc0bff345c707f8d3a6517003a3cea2e9984b249fcd27"
+    },
+    {
+      "path": "assets/runtime/barricade.gltf",
+      "bytes": 12111,
+      "sha256": "c65da397a3147c57382f44d5f872674fe8ae54af4a9acd9b017d034109601901"
+    },
+    {
+      "path": "assets/runtime/body_bag.bin",
+      "bytes": 14208,
+      "sha256": "dd96b0c9cca7b506db60cd5be3fc62c3b65d65f2de9e453271e28a91dc724491"
+    },
+    {
+      "path": "assets/runtime/body_bag.gltf",
+      "bytes": 4218,
+      "sha256": "663ea766d18c85b37a16b214dee23932d02d62ae4e51ade91c5acd3f7d906a7d"
+    },
+    {
+      "path": "assets/runtime/bridge.bin",
+      "bytes": 108080,
+      "sha256": "fbc6d0098f887f74cc1d9d1e1678da6d4256c662a702a176401764139ad963c9"
+    },
+    {
+      "path": "assets/runtime/bridge.gltf",
+      "bytes": 22653,
+      "sha256": "90bb31d2217799e5d53dc3e3d24801cb92115464601c393e52d859deaf738261"
+    },
+    {
+      "path": "assets/runtime/bush.bin",
+      "bytes": 24440,
+      "sha256": "b5bc44063cdb3466323f046be8b857ff554cd6c381f5197e5fea01272fe4b92f"
+    },
+    {
+      "path": "assets/runtime/bush.gltf",
+      "bytes": 9887,
+      "sha256": "45239ce109a89260b20639b53b90048dd57b2398d84614d38102510beba6ed80"
+    },
+    {
+      "path": "assets/runtime/camp.bin",
+      "bytes": 19080,
+      "sha256": "a4ee64f19b5c8d2a3eaf85ff7669fdcb7587ccd27c96f24e9e71f5f19ffbba9a"
+    },
+    {
+      "path": "assets/runtime/camp.gltf",
+      "bytes": 14609,
+      "sha256": "6e5c9b77fd32c328e009cffcfdb54b6d941465ba966f1dd3b71723c0e43e69f7"
+    },
+    {
+      "path": "assets/runtime/car_wreck.bin",
+      "bytes": 258464,
+      "sha256": "76fc405799db38ba38aedfe432a9bc7b264f2803fb8d633ed4072a42451b65b1"
+    },
+    {
+      "path": "assets/runtime/car_wreck.gltf",
+      "bytes": 95137,
+      "sha256": "f0cd326b307d68e3d54b989b3846623063d1dbd65a6be2bacb96343e98ec6433"
+    },
+    {
+      "path": "assets/runtime/checkpoint.bin",
+      "bytes": 214240,
+      "sha256": "c3250f7207d2c94009eab33e02dbe6b96217a428b8d8007b65db2ad57a64a358"
+    },
+    {
+      "path": "assets/runtime/checkpoint.gltf",
+      "bytes": 46169,
+      "sha256": "1ca7960a51878d356245ff3926ea72d69578725c248bebbb776bc8dd5d57fdb0"
+    },
+    {
+      "path": "assets/runtime/dog_husky.bin",
+      "bytes": 416752,
+      "sha256": "aecd455361a31bb1c450509b4fcdc8d4d44ad55622e0462c0f936db3c4964c23"
+    },
+    {
+      "path": "assets/runtime/dog_husky.gltf",
+      "bytes": 149194,
+      "sha256": "10ecedea6ec757a69399065a9643ffa7af0ad73adf7a34b49759dfed6d9e252b"
+    },
+    {
+      "path": "assets/runtime/dog_shepherd.bin",
+      "bytes": 389056,
+      "sha256": "a4e28a0d28a7181b70c4b79a10de5f1cb75b7208ef4353146b08a6949e08ccbf"
+    },
+    {
+      "path": "assets/runtime/dog_shepherd.gltf",
+      "bytes": 146785,
+      "sha256": "58aabfb7b91dd2e3a02c7e575992df80d2ddea6ac70e428eff12efc82c1b5c41"
+    },
+    {
+      "path": "assets/runtime/fence.bin",
+      "bytes": 35208,
+      "sha256": "8d9a8113de434d47f0f02cae195001ee72c636b0e82fdf223cdc008d398b591c"
+    },
+    {
+      "path": "assets/runtime/fence.gltf",
+      "bytes": 6124,
+      "sha256": "81565ebc8eed1f892bd2e664b5d62a68c3a53bb6e9834c26511d3f42fad9ef99"
+    },
+    {
+      "path": "assets/runtime/grass_clump.bin",
+      "bytes": 8544,
+      "sha256": "2ca63ae8636f5ee0ee1b6884d413abbeccde2fda16c9ffe92cf5b57579056399"
+    },
+    {
+      "path": "assets/runtime/grass_clump.gltf",
+      "bytes": 2368,
+      "sha256": "49d9a365cb435f283429d9205b2bf831fa6d317a6ca4097fde87816a55c21627"
+    },
+    {
+      "path": "assets/runtime/house_ruin.bin",
+      "bytes": 342804,
+      "sha256": "66e984df92944cb2893e6bcd4eb839e0d0f1b5854be5f97600d0d441a1dde855"
+    },
+    {
+      "path": "assets/runtime/house_ruin.gltf",
+      "bytes": 65840,
+      "sha256": "f8fb33c013c372d0bea59a6a6870329f30b819d44eaa6c9d6f90f6432cb50b5e"
+    },
+    {
+      "path": "assets/runtime/low_log.bin",
+      "bytes": 3872,
+      "sha256": "a16dd8244b6a8d27e2f2dcc40233f94a7192d0ff2b77fd73f1743d93c0e0aa5b"
+    },
+    {
+      "path": "assets/runtime/low_log.gltf",
+      "bytes": 5340,
+      "sha256": "c2dba8099e71d111bf8d043e00c95fc840451e2e37f6653bc60076f77f729a48"
+    },
+    {
+      "path": "assets/runtime/med_crate.bin",
+      "bytes": 71920,
+      "sha256": "f17e25e49be674515ae02526e921e194b21d8a48244c4c604f22cccaf247443c"
+    },
+    {
+      "path": "assets/runtime/med_crate.gltf",
+      "bytes": 14660,
+      "sha256": "977228c3ada184a483c354f6f0fede75b2e3d0049a03f3b2369ed2cd72ec310a"
+    },
+    {
+      "path": "assets/runtime/military_truck.bin",
+      "bytes": 323924,
+      "sha256": "9a3349c5cbda532cb0fb25fe2eb907f371520ac905a5dc657df64601011a8ccd"
+    },
+    {
+      "path": "assets/runtime/military_truck.gltf",
+      "bytes": 116246,
+      "sha256": "bd744120ef0a718346e7c926bd7f2837d8e8ef38ac20cf4863733b74eea09ac0"
+    },
+    {
+      "path": "assets/runtime/overhead.bin",
+      "bytes": 9360,
+      "sha256": "d35b91923705c2736e22e1495dd09f3e32ed351306c4e3225cc45e5a27976cda"
+    },
+    {
+      "path": "assets/runtime/overhead.gltf",
+      "bytes": 4380,
+      "sha256": "a0778c3fc700ef60779e58d61152730daabb35901c791883b327394a1c69cd3a"
+    },
+    {
+      "path": "assets/runtime/road_slab.bin",
+      "bytes": 75324,
+      "sha256": "a87d1248aba6a32c0b597cdd089296a6760b4a55c40b1c7744eefa4cb382c243"
+    },
+    {
+      "path": "assets/runtime/road_slab.gltf",
+      "bytes": 57919,
+      "sha256": "877814d43afab620fd610e3c49df49452548d68cc936fa61d494e48752243bac"
+    },
+    {
+      "path": "assets/runtime/rock.bin",
+      "bytes": 2836,
+      "sha256": "ccdfa1ccd7e3be945f43c154eb6a026d579d2c08cf0ae257ec3a6b82ea006414"
+    },
+    {
+      "path": "assets/runtime/rock.gltf",
+      "bytes": 2338,
+      "sha256": "bf788e6e95219151c0c4c07a64b718173b89ded8d75a9b61fdbfa2f5790e93d8"
+    },
+    {
+      "path": "assets/runtime/rubble.bin",
+      "bytes": 113400,
+      "sha256": "d355575fdb47925adb6a6c38703cfdd23d65ad790dd13e9a201ae6bec3a92693"
+    },
+    {
+      "path": "assets/runtime/rubble.gltf",
+      "bytes": 18468,
+      "sha256": "d8120072ad54fa1300b01f22e75a827b1e0d276b11f347881a0d845bd086209c"
+    },
+    {
+      "path": "assets/runtime/supply_crate.bin",
+      "bytes": 78184,
+      "sha256": "9f6a5097a2f0cc53f9488099121b6a6e1a66076ac33dbaa6459c5f9a37b37419"
+    },
+    {
+      "path": "assets/runtime/supply_crate.gltf",
+      "bytes": 15456,
+      "sha256": "c30250e2ccddefe4023faac24b5b8d9072ca82676aa23101c310c493058936c3"
+    },
+    {
+      "path": "assets/runtime/survivor_ellis.bin",
+      "bytes": 952564,
+      "sha256": "5d155a0f78f2197fc74c404a4474d591aa4a39c060527708bc9cff40616ceb76"
+    },
+    {
+      "path": "assets/runtime/survivor_ellis.gltf",
+      "bytes": 226503,
+      "sha256": "af8453073034a5fd946cdf05e31a4308007387887890f0e6840eac4e8892423d"
+    },
+    {
+      "path": "assets/runtime/survivor_mara.bin",
+      "bytes": 950288,
+      "sha256": "0a42e26fc4d26b2159af6f3b74f3bfa5e083092fdaa1ce95af6acca6d298b4bd"
+    },
+    {
+      "path": "assets/runtime/survivor_mara.gltf",
+      "bytes": 225643,
+      "sha256": "27084116bcbf53e2b19a53662b308a41507eb2c8d165b9e3142aa54770529e36"
+    },
+    {
+      "path": "assets/runtime/terrain.bin",
+      "bytes": 77588,
+      "sha256": "e8376c949e82f613630dd9bf1cbfc98efcc801a884d2c6729b589d8510436b30"
+    },
+    {
+      "path": "assets/runtime/terrain.gltf",
+      "bytes": 9790,
+      "sha256": "a252c5c2e8c1b88d5c18ffbe060835911136f91a0912e7c548194f2592c64140"
+    },
+    {
+      "path": "assets/runtime/textures/SR_ashskin_Anatomical_1024.png",
+      "bytes": 1039238,
+      "sha256": "f62f80c41782d3753b8e6c75ff4c15dc583ea2e0a2e0409b5c58536e7f1dc9ca"
+    },
+    {
+      "path": "assets/runtime/textures/SR_ashskin_Normal.png",
+      "bytes": 89323,
+      "sha256": "86f0dd75ce8c08bc0c3b018b8e027a8109e71d5d2b54f7650e52138193395d08"
+    },
+    {
+      "path": "assets/runtime/textures/SR_ashskin_Roughness.png",
+      "bytes": 8752,
+      "sha256": "59c7acba0b7e501f5b641a48986cabe687672eac32263eb9e0f1ef0ca84b01d0"
+    },
+    {
+      "path": "assets/runtime/textures/SR_asphalt_Albedo.png",
+      "bytes": 195293,
+      "sha256": "5fb290d11c5de17f023c450cfa33e7cd4c95c9e4261a7887fd137ccf68ad5492"
+    },
+    {
+      "path": "assets/runtime/textures/SR_asphalt_Normal.png",
+      "bytes": 89393,
+      "sha256": "b188497b1410ddfd4b3f20bcd4989507d7d753b959348de6b117b3c20429be6f"
+    },
+    {
+      "path": "assets/runtime/textures/SR_asphalt_Roughness.png",
+      "bytes": 8787,
+      "sha256": "e94821f39322389ce41ddb4025a933d16941c2e45385841f0b0db1b69c464b18"
+    },
+    {
+      "path": "assets/runtime/textures/SR_bark_Albedo.png",
+      "bytes": 203470,
+      "sha256": "e51261203f8b0d3d07398386295d4c7518676b7f0c1d9287973b99a4c7d42b46"
+    },
+    {
+      "path": "assets/runtime/textures/SR_bark_Normal.png",
+      "bytes": 88574,
+      "sha256": "9114ea3116f2b8e295a3052cd6e60a88cc081bfba4369a645d8cbd8b3c8c50a5"
+    },
+    {
+      "path": "assets/runtime/textures/SR_bark_Roughness.png",
+      "bytes": 6543,
+      "sha256": "a6aab5a4c322ae69a33b15db383e234fbaa4984851542db07be20d2fd8ee4547"
+    },
+    {
+      "path": "assets/runtime/textures/SR_blood_Albedo.png",
+      "bytes": 161768,
+      "sha256": "1619135243525b54a29784773c35e91e7fc2919b807a548e4297f4e8ccdfedc1"
+    },
+    {
+      "path": "assets/runtime/textures/SR_blood_Normal.png",
+      "bytes": 87229,
+      "sha256": "888ec2323f1ed264cf78102b8f6f18948af67c30a0183298468be8e9ad2febac"
+    },
+    {
+      "path": "assets/runtime/textures/SR_blood_Roughness.png",
+      "bytes": 8918,
+      "sha256": "88b141abe2d1768bc5d1b3dd7f87deb7cbd7354323a70aaf368c2f174a75a9dd"
+    },
+    {
+      "path": "assets/runtime/textures/SR_bone_Albedo.png",
+      "bytes": 291119,
+      "sha256": "78843635a8f00e1b981dc686d15ff3de1c615b8e5698eed27be5e110d75d8b43"
+    },
+    {
+      "path": "assets/runtime/textures/SR_bone_Normal.png",
+      "bytes": 87325,
+      "sha256": "192fb12f1a48a0545489a5cc9a0c86e9238ae74ca0abc1b6d15c590a0a72bc03"
+    },
+    {
+      "path": "assets/runtime/textures/SR_bone_Roughness.png",
+      "bytes": 8835,
+      "sha256": "1b0590eb6bbd58fd9b00b1f28314353b7b08a3368565240d48679808fb658809"
+    },
+    {
+      "path": "assets/runtime/textures/SR_concrete_Albedo.png",
+      "bytes": 264246,
+      "sha256": "10c93c6e7eb80a623099fcaffdfd20e09dc7ee8315f3ad7699dadfbda31a63ac"
+    },
+    {
+      "path": "assets/runtime/textures/SR_concrete_Normal.png",
+      "bytes": 89374,
+      "sha256": "684fb6bee3c5bb38619d3af3b08e831b3a8e64ade1640b048404d03bc74bff35"
+    },
+    {
+      "path": "assets/runtime/textures/SR_concrete_Roughness.png",
+      "bytes": 8828,
+      "sha256": "7d7061c761a901392ca76ac64900703178987b8132135a5f2228d913cc12e36d"
+    },
+    {
+      "path": "assets/runtime/textures/SR_denim_Albedo.png",
+      "bytes": 208390,
+      "sha256": "a0e88c5f7810ce96785368ebfd75e7d17b2b88a0fb038e6ee68368f314273de9"
+    },
+    {
+      "path": "assets/runtime/textures/SR_denim_Normal.png",
+      "bytes": 87304,
+      "sha256": "c511cfb6e2ef1ccaaa839a61ddcb993ecb666ba70fdb7b99b28fab0ff7176888"
+    },
+    {
+      "path": "assets/runtime/textures/SR_denim_Roughness.png",
+      "bytes": 8800,
+      "sha256": "22f00eadfc23a173d1887d4e64155f6bf29d3918e9cc062820af3c14cc06d402"
+    },
+    {
+      "path": "assets/runtime/textures/SR_earth_Albedo.png",
+      "bytes": 221864,
+      "sha256": "51edbb972c92c90627d9be0be7b6cb9599de6562a9f784ee0a85cd9b0c76a5a1"
+    },
+    {
+      "path": "assets/runtime/textures/SR_earth_Normal.png",
+      "bytes": 89351,
+      "sha256": "16f96b4fe521e4be38465c6ff335531ad82fc64ae349d3d4bf3a7d4bfc976120"
+    },
+    {
+      "path": "assets/runtime/textures/SR_earth_Roughness.png",
+      "bytes": 8768,
+      "sha256": "b5be77f6bfce05e7b2ad4f59358ae52a4ae7152f11bb1af7ef4f3e216fa73b64"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_cream_Albedo.png",
+      "bytes": 298743,
+      "sha256": "312bd2030c026cd916c327967bbe62bf5fd33aa66afeb750c63732bfdb686f2d"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_cream_Normal.png",
+      "bytes": 89542,
+      "sha256": "1823557468a5c811bb446608e40b6101bac04a448f0ac4bdd610f62bd1d163a9"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_cream_Roughness.png",
+      "bytes": 8851,
+      "sha256": "c9dff8abf1ba14df742f8ed4cb33161396de4d90a757344575ed349360e16a24"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_dark_Albedo.png",
+      "bytes": 139794,
+      "sha256": "851111be834ac871ceefe4344eb1322196ff12982e3cb3201abe494708f2f6f6"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_dark_Normal.png",
+      "bytes": 89642,
+      "sha256": "744f78166bba8cfe901568bdaecf632fa116fb4acc96b9ddae6defd8e3a5b5a8"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_dark_Roughness.png",
+      "bytes": 8784,
+      "sha256": "0175727dece94fd931a77b959f674194f70f1fe4a310eb6ca935514be42120e5"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_grey_Albedo.png",
+      "bytes": 262493,
+      "sha256": "b7d3acac804bcef89c94ac815b580fcadba34fd29917f6d12f4734badafc1c31"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_grey_Normal.png",
+      "bytes": 89837,
+      "sha256": "0689ffd7233095169ed96b7a9a24385224bff7a8573b9a69f457aabf334bc53b"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_grey_Roughness.png",
+      "bytes": 8866,
+      "sha256": "13c5b8b1f32c6b200d42116dfde42653aac801592e9ae82612eb619961683009"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_tan_Albedo.png",
+      "bytes": 254381,
+      "sha256": "5ae9cac289ffc72315c2d223d92e3aa1a688e231a3fd8357b01fdaa7011de474"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_tan_Normal.png",
+      "bytes": 89571,
+      "sha256": "8d7610f7b045f487ee2f5d79f296ad10c5f916377d2b124b7a332edec8a7dc15"
+    },
+    {
+      "path": "assets/runtime/textures/SR_fur_tan_Roughness.png",
+      "bytes": 8849,
+      "sha256": "1784bf9feb2cc0bc1c6bf8b2244c87e6ed7e15d2e28283c04fe0383809364ca0"
+    },
+    {
+      "path": "assets/runtime/textures/SR_glass_Albedo.png",
+      "bytes": 239159,
+      "sha256": "836549ba79997dba0e5bc8491061bedf1c82ea68ae74161aa6479ca0b9006399"
+    },
+    {
+      "path": "assets/runtime/textures/SR_glass_Normal.png",
+      "bytes": 99938,
+      "sha256": "a4288f6d1d45b3339e008a1a519fd0c76ad3e0f4b6386a250e0dca850b4a64ea"
+    },
+    {
+      "path": "assets/runtime/textures/SR_glass_Roughness.png",
+      "bytes": 8847,
+      "sha256": "9a28448746356328828913eca4e792129e38b3dcd9100e445cb61221314a91eb"
+    },
+    {
+      "path": "assets/runtime/textures/SR_infected_Anatomical_1024.png",
+      "bytes": 1043317,
+      "sha256": "383ff14ba629ba85adbf124a0fadcd0231267967b1b678f7099bf110820b0c4e"
+    },
+    {
+      "path": "assets/runtime/textures/SR_infected_Normal.png",
+      "bytes": 89202,
+      "sha256": "8cc514929a2462d476cc807295976741f395671f0f7e8d84ac71a1a3cdcc41dd"
+    },
+    {
+      "path": "assets/runtime/textures/SR_infected_Roughness.png",
+      "bytes": 8797,
+      "sha256": "f8594240187545ed282b04c52bf434dab2bd187f318bc9b954bac1eaa3130ed3"
+    },
+    {
+      "path": "assets/runtime/textures/SR_ivory_Albedo.png",
+      "bytes": 305165,
+      "sha256": "d897265129b6296b88cabf769e99fafdc96c6e0d53611e7f9411dd453f1fc6c6"
+    },
+    {
+      "path": "assets/runtime/textures/SR_ivory_Normal.png",
+      "bytes": 87178,
+      "sha256": "c950d11563dfbd697262290b9effde5ec46901d88076b79f48a3f8d831bde5fc"
+    },
+    {
+      "path": "assets/runtime/textures/SR_ivory_Roughness.png",
+      "bytes": 8825,
+      "sha256": "e67b45ce3954292ade16031ba701dd26d2d1810a13a90131e426c8c202488d7d"
+    },
+    {
+      "path": "assets/runtime/textures/SR_jacket_Albedo.png",
+      "bytes": 221884,
+      "sha256": "1faa87a2806c074bfa6a87dd3c26fdfc40fbe605dbea50ea7e70de62ea3fc4a9"
+    },
+    {
+      "path": "assets/runtime/textures/SR_jacket_Normal.png",
+      "bytes": 87399,
+      "sha256": "d2ed030157bb9e5b2b1542a7c3b5d59133b61446aacd6c985e507a44c0c7626c"
+    },
+    {
+      "path": "assets/runtime/textures/SR_jacket_Roughness.png",
+      "bytes": 8860,
+      "sha256": "a48d01211d54d2cb18aef22b621a0cdd3dabc91634f2337cd97079e2d4aa9088"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leaf_Albedo.png",
+      "bytes": 192563,
+      "sha256": "4641c9ce36c271f22e14f5bdc7d8adc3f3803ea895064843e16f33d7ab79794c"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leaf_dead_Albedo.png",
+      "bytes": 221321,
+      "sha256": "edd8f30efa01294fc35099816bcb717c76405623a3f187bbff1b10f9402f8933"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leaf_dead_Normal.png",
+      "bytes": 87007,
+      "sha256": "a9176c7350ab5519dc22c3c7e8a88ced7b62e6741d6c8be0ee0613bb33393e26"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leaf_dead_Roughness.png",
+      "bytes": 5669,
+      "sha256": "92869d6035e55b10b081e649cde494658f462fd3f89437acd9f3078343414f25"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leaf_Normal.png",
+      "bytes": 87156,
+      "sha256": "831a0c221467d1c7a0bfbdbabb11d48ef7b351b9174f2b91bed408646de9c9f4"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leaf_Roughness.png",
+      "bytes": 6359,
+      "sha256": "79b298169d850a099e1d9c0f9f654fc22e69b5c54d2ac9430483356bf8568c8e"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leather_Albedo.png",
+      "bytes": 143220,
+      "sha256": "d5958a02983ce84209e3bdbc2376bb9c030db1d49ffdde2b2c79b60c0a76cf42"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leather_Normal.png",
+      "bytes": 87219,
+      "sha256": "7f8e5daea07b9ddf2986b31b7c1c39d3222f438983fbed0e20625677ec86449d"
+    },
+    {
+      "path": "assets/runtime/textures/SR_leather_Roughness.png",
+      "bytes": 8789,
+      "sha256": "2f8311841b71b1e9a4ae7cd30534a4dd7f14425eae6a87ca09f6acf9e25d034a"
+    },
+    {
+      "path": "assets/runtime/textures/SR_parka_Albedo.png",
+      "bytes": 229819,
+      "sha256": "fb4fae7e457df64f6efeef9da8c4ca71b77e50cc190047197b84aef5fc0f4b7c"
+    },
+    {
+      "path": "assets/runtime/textures/SR_parka_Normal.png",
+      "bytes": 87397,
+      "sha256": "a1639ad85afef8b0f68de8cba6cfb3817fd5902cdd935f55ea8f3b353fff7b5c"
+    },
+    {
+      "path": "assets/runtime/textures/SR_parka_Roughness.png",
+      "bytes": 8790,
+      "sha256": "f63d2dfa17273806f4b38e493e26820b0e9a653352d379d44f5db0a91cca6af8"
+    },
+    {
+      "path": "assets/runtime/textures/SR_red_Albedo.png",
+      "bytes": 213815,
+      "sha256": "7fc4004804d1c533320216eac3c73272a6f2bd8a6d8d2bbbec279ad2c91c529e"
+    },
+    {
+      "path": "assets/runtime/textures/SR_red_Normal.png",
+      "bytes": 87231,
+      "sha256": "c5f029237205f929653ab056cec3d2f3306358e2254ca20b7373968f4f45466c"
+    },
+    {
+      "path": "assets/runtime/textures/SR_red_Roughness.png",
+      "bytes": 8783,
+      "sha256": "bf526a1167cbc626e223ab400627703c6053baa4f644629c937e84cd65f6f083"
+    },
+    {
+      "path": "assets/runtime/textures/SR_rubber_Albedo.png",
+      "bytes": 84908,
+      "sha256": "744a7510aaf4803b9189859a00163f22bd5a51dd9f0ed950c8936a96cece0829"
+    },
+    {
+      "path": "assets/runtime/textures/SR_rubber_Normal.png",
+      "bytes": 87053,
+      "sha256": "c7777d669532e3bba331e71a27a376635297d17f217dad8f2f1efbf032052fe9"
+    },
+    {
+      "path": "assets/runtime/textures/SR_rubber_Roughness.png",
+      "bytes": 8815,
+      "sha256": "52ba904784ee6215227feb073e796039bf57923cc5f11a6bab3b0727c6bcb25c"
+    },
+    {
+      "path": "assets/runtime/textures/SR_rust_Albedo.png",
+      "bytes": 247409,
+      "sha256": "734665b5d9dc0a081c8da3dca7dc4bea1f5fb3ed647b827a849f56b4dee0aaaa"
+    },
+    {
+      "path": "assets/runtime/textures/SR_rust_Normal.png",
+      "bytes": 99617,
+      "sha256": "e0eac77f064c7e0c8c5f2b4d870407c735d104e4678da424726db7f17a4aa324"
+    },
+    {
+      "path": "assets/runtime/textures/SR_rust_Roughness.png",
+      "bytes": 8858,
+      "sha256": "339f6f4b1937c09e92083145e5a92fc9938d5ba1c3f0fdcc3e68b45d4a9a4869"
+    },
+    {
+      "path": "assets/runtime/textures/SR_skin_Anatomical_1024.png",
+      "bytes": 1193661,
+      "sha256": "76ba8be9d4bb2d420d62b6ee95d2e4c08a3d1988681e687179abb70d59055879"
+    },
+    {
+      "path": "assets/runtime/textures/SR_skin_Normal.png",
+      "bytes": 89377,
+      "sha256": "e88106c777b45d19285305eec25b01708767e0b70cf26d6f7d7cf55104dbb804"
+    },
+    {
+      "path": "assets/runtime/textures/SR_skin_Roughness.png",
+      "bytes": 8894,
+      "sha256": "4b5cdca49add8f44db200573dd06f4838401d8526f35686660bb39caeffbbd9f"
+    },
+    {
+      "path": "assets/runtime/textures/SR_steel_Albedo.png",
+      "bytes": 271312,
+      "sha256": "dbccc15a2541bbc1a4add8be6545b5c77c74e783e60ba1f5d1dbf69122893933"
+    },
+    {
+      "path": "assets/runtime/textures/SR_steel_Normal.png",
+      "bytes": 99556,
+      "sha256": "a9753d647fa8fc014cf9f99147ebf021339b856e19ffd57b33ae577061674f88"
+    },
+    {
+      "path": "assets/runtime/textures/SR_steel_Roughness.png",
+      "bytes": 8819,
+      "sha256": "ce0b18e689d3c4c438f25bc7b7e76453e29a92564114e705cbcb7c8bbbd7e22e"
+    },
+    {
+      "path": "assets/runtime/textures/SR_webbing_Albedo.png",
+      "bytes": 233184,
+      "sha256": "68576f1f6f1b7a6d7779c599790e3f99b5d8cdd3a777503907d7cc09dd2be455"
+    },
+    {
+      "path": "assets/runtime/textures/SR_webbing_Normal.png",
+      "bytes": 87139,
+      "sha256": "4f72d8e59b37c6ec8ea5ce96f51028377cc8ff4ff3f31f8ccab74c72af239873"
+    },
+    {
+      "path": "assets/runtime/textures/SR_webbing_Roughness.png",
+      "bytes": 8781,
+      "sha256": "1e18fc531099d99d33b8cac08414f9a58ac539f2266eaefff1d8dd6a1a2bc2e0"
+    },
+    {
+      "path": "assets/runtime/textures/SR_wood_Albedo.png",
+      "bytes": 227560,
+      "sha256": "2a86eb4eca41e8edc60c0d42a4c38fe4d20aa63b2bf9cefa31cc82a8f540b773"
+    },
+    {
+      "path": "assets/runtime/textures/SR_wood_Normal.png",
+      "bytes": 88243,
+      "sha256": "f62b21bec866b9ebf2612a82997cb44be37fb9319f73429bd4dc997385139bf0"
+    },
+    {
+      "path": "assets/runtime/textures/SR_wood_Roughness.png",
+      "bytes": 8733,
+      "sha256": "67be988bfebe0cb7fbb565c8717f175efe53d29d6856038401bba4922c812b4c"
+    },
+    {
+      "path": "assets/runtime/tree_dead_lod.bin",
+      "bytes": 22832,
+      "sha256": "f08c92c6ac877576a1967f5b09b89298cfd9a1ac8eb2e659d7c388c1e0350c44"
+    },
+    {
+      "path": "assets/runtime/tree_dead_lod.gltf",
+      "bytes": 87204,
+      "sha256": "bc987befc095f9bc233945bf680c12feed2be1b430e584d36382b90b7beda37a"
+    },
+    {
+      "path": "assets/runtime/tree_dead.bin",
+      "bytes": 55376,
+      "sha256": "ab673c3e7db0ba64a555541b6250b6f57a08053bcdae99bb75b548202bc1ef40"
+    },
+    {
+      "path": "assets/runtime/tree_dead.gltf",
+      "bytes": 76374,
+      "sha256": "aa5a9c072bd1f540dc46141df8995105ae6731cdf6ed893d7a5417d61785316a"
+    },
+    {
+      "path": "assets/runtime/tree_oak_lod.bin",
+      "bytes": 79612,
+      "sha256": "2d85187881e580bfed67088ba4a5bb3c4c2ba05ebe9ac34a0ba687cc3d396143"
+    },
+    {
+      "path": "assets/runtime/tree_oak_lod.gltf",
+      "bytes": 86961,
+      "sha256": "0a7d5987bcb6be7c1c4e94e92f0d9c9e9a97dc851bc58304cfb3b4f329653932"
+    },
+    {
+      "path": "assets/runtime/tree_oak.bin",
+      "bytes": 174424,
+      "sha256": "b88082e1988dc5001b0cf3554a99b310569f1f1d43d83235ba10d40dc569026d"
+    },
+    {
+      "path": "assets/runtime/tree_oak.gltf",
+      "bytes": 76356,
+      "sha256": "fb7e22f20dd32c376d988ab3a3e9139bf0cd16b9796e75ce0c00ec1f999502f0"
+    },
+    {
+      "path": "assets/runtime/truck_wreck.bin",
+      "bytes": 317360,
+      "sha256": "942cfd838b06f68f7c1e9a4470edbf2ab0a86fda5ca247806dcbe3510a8f50f5"
+    },
+    {
+      "path": "assets/runtime/truck_wreck.gltf",
+      "bytes": 104256,
+      "sha256": "6afb2d79fd58619812074f2ad6a19c85d77f37b8f008af57421fffc6939fd179"
+    },
+    {
+      "path": "assets/runtime/warehouse.bin",
+      "bytes": 290308,
+      "sha256": "485ad7d5d1928a01f29a2b116c1064d5829a738c8e3ec798936e0a6244d9cf8a"
+    },
+    {
+      "path": "assets/runtime/warehouse.gltf",
+      "bytes": 168197,
+      "sha256": "3914a18343639f31634ae67707302e3f29ae223d82ffc6cd79a1b42871b408a9"
+    },
+    {
+      "path": "assets/runtime/warning_sign.bin",
+      "bytes": 115272,
+      "sha256": "9765ba5112599d75c8c4a033dabf2ad7899c974637bd1c550ec7c0fd8b66b2d6"
+    },
+    {
+      "path": "assets/runtime/warning_sign.gltf",
+      "bytes": 13144,
+      "sha256": "bd7bcb25247d44c2e46572df2d83f6866a9983c59410df4e42ef9566aa027693"
+    },
+    {
+      "path": "assets/runtime/weapon_hunting.bin",
+      "bytes": 174988,
+      "sha256": "8789be7104b5cb01620b90b3443a23666759345424bb488f8d8acdaadbc543bf"
+    },
+    {
+      "path": "assets/runtime/weapon_hunting.gltf",
+      "bytes": 50377,
+      "sha256": "12387ef65e9bf96f360e83df45480f27129164648d416effc09b745997616b2b"
+    },
+    {
+      "path": "assets/runtime/weapon_pistol.bin",
+      "bytes": 129484,
+      "sha256": "744ee6408bfe06b379ac96359ab64d76aa51c232485ddf9f7452bde5c97063ec"
+    },
+    {
+      "path": "assets/runtime/weapon_pistol.gltf",
+      "bytes": 38318,
+      "sha256": "92b80f8263408d50b40b0a19af7ce1b86be6e61ae7d16057edfd394e3832056e"
+    },
+    {
+      "path": "assets/runtime/weapon_revolver.bin",
+      "bytes": 65936,
+      "sha256": "998ba698bc0836b1e3e7f4105e0635c3c18a915e0a75f6e2348fb94d2f654a8c"
+    },
+    {
+      "path": "assets/runtime/weapon_revolver.gltf",
+      "bytes": 36878,
+      "sha256": "e4cfe75be4d927b7ef3349f49668a84a6f66b6ae90bcef661ab25eb24062f91e"
+    },
+    {
+      "path": "assets/runtime/weapon_rifle.bin",
+      "bytes": 211492,
+      "sha256": "8135da0f10060396ba1141ac4ab21a7075007f50e8055908056cb447d76daf8d"
+    },
+    {
+      "path": "assets/runtime/weapon_rifle.gltf",
+      "bytes": 55055,
+      "sha256": "1ffa96bd55096c582306259cf596f13460bae9eb9216e5d2167f7372ff75240a"
+    },
+    {
+      "path": "assets/runtime/weapon_shotgun.bin",
+      "bytes": 157612,
+      "sha256": "e7c60e14fb13480f1552685e3b9ddd4d2a2e0fe84c5b07845a6394e5aa4c0dab"
+    },
+    {
+      "path": "assets/runtime/weapon_shotgun.gltf",
+      "bytes": 45464,
+      "sha256": "98dd40fdccdb276ef5406249c94932a48edba18c2611c59c7fc6e07cd2bcf6f3"
+    },
+    {
+      "path": "assets/runtime/weapon_smg.bin",
+      "bytes": 185292,
+      "sha256": "3aa21c6c5326d4f34ebdedbf56effd103b2e158694a85337d77a6c6b07417e3e"
+    },
+    {
+      "path": "assets/runtime/weapon_smg.gltf",
+      "bytes": 48190,
+      "sha256": "95c9f249b50ddc6e6938509d029c06c040cf155db95318409a1009437811c893"
+    },
+    {
+      "path": "assets/runtime/zombie_brute.bin",
+      "bytes": 749572,
+      "sha256": "d2be6edf140a6a48ef5f1b6bac91e57a4dc4863dcca2c43dd0062ee7cd9b608c"
+    },
+    {
+      "path": "assets/runtime/zombie_brute.gltf",
+      "bytes": 200276,
+      "sha256": "f6f94af33248b0c83e8dc80e8efd1bbc91e0e1c07d10e63089e6c3678c45d4ac"
+    },
+    {
+      "path": "assets/runtime/zombie_military.bin",
+      "bytes": 838068,
+      "sha256": "8f3f9dde39239a4360fcdbb07d9a076cf02f443577cbc20a09e74f3f5e126164"
+    },
+    {
+      "path": "assets/runtime/zombie_military.gltf",
+      "bytes": 201870,
+      "sha256": "7e291b9942bab108b16fe13924c6cab305263cee96a61ea6ca6ce9f6ab29b164"
+    },
+    {
+      "path": "assets/runtime/zombie_runner.bin",
+      "bytes": 752828,
+      "sha256": "112ff937e35334188cce305469112a2f36960166349d68e54518ff7f9ac26cc5"
+    },
+    {
+      "path": "assets/runtime/zombie_runner.gltf",
+      "bytes": 201471,
+      "sha256": "07e9203a24306b15a005ecd984a9b2dd77c2d82324b87689f005db879e08065d"
+    },
+    {
+      "path": "assets/runtime/zombie_stalker.bin",
+      "bytes": 753200,
+      "sha256": "ca923509b17ffa35ece6b9a111c3a521da73ab5dc5c6efa34dc1d21cda3b463a"
+    },
+    {
+      "path": "assets/runtime/zombie_stalker.gltf",
+      "bytes": 199277,
+      "sha256": "c29341e1dbce3bb32de38ae20318f04673aa1a730e096c5aee1d9772a21f98ef"
+    },
+    {
+      "path": "assets/runtime/zombie_walker.bin",
+      "bytes": 751344,
+      "sha256": "443b618bcfe1999b075a7fc35522f588c1a793320d61f1cda7feb7644448fb6c"
+    },
+    {
+      "path": "assets/runtime/zombie_walker.gltf",
+      "bytes": 201206,
+      "sha256": "0a9138259fea0a220aa8c4b0b831e80b4423b85f2d64b9ebef20ac434ea0c17a"
+    },
+    {
+      "path": "assets/supplied/melty/scene.bin",
+      "bytes": 1935692,
+      "sha256": "d512316b8322e0a2f7a52bab6530898b220f517eedfb08cca3c6346ce0f66bc6"
+    },
+    {
+      "path": "assets/supplied/melty/scene.gltf",
+      "bytes": 1374058,
+      "sha256": "143c2f58877e89ae22b43daa3d1ecae33e622d293f82235df94d9618279845c6"
+    },
+    {
+      "path": "assets/supplied/melty/textures/Material__meltyzombie_diffuse_tga_baseColor.png",
+      "bytes": 2005654,
+      "sha256": "b352280dc435414921c3369268d06951b344ba8350103137efbb02ceaf757843"
+    },
+    {
+      "path": "assets/supplied/survivor_cowboy_motion.glb",
+      "bytes": 7926364,
+      "sha256": "22df46affd0fa54f6fa73d8cb519fd85566028753a8860057da33c11afa7345e"
+    },
+    {
+      "path": "assets/supplied/survivor_cowboy.glb",
+      "bytes": 7699268,
+      "sha256": "612e4ddcd1d24ed09d6c1120359deaba2ca7986338b76d3f30cace6a71798712"
+    },
+    {
+      "path": "assets/supplied/zombie_grim.glb",
+      "bytes": 4618056,
+      "sha256": "3cf9e7758ee00c3e6a6158bb7e5a129bee43218c1fd6f3efe05c433fedc3dbba"
+    },
+    {
+      "path": "assets/ui/dog_husky.png",
+      "bytes": 95232,
+      "sha256": "26ca322a2444bb83c3019d02d4326872c00f6dacb0f6b9782bf41815d6676ac6"
+    },
+    {
+      "path": "assets/ui/dog_shepherd.png",
+      "bytes": 94128,
+      "sha256": "8efffb59adb86d246b691e334a2a4ed2f76f79f71266784bc07e06b8f4621e3d"
+    },
+    {
+      "path": "assets/ui/survivor_cowboy.png",
+      "bytes": 195179,
+      "sha256": "904765b6671d563172b81b938ab977bea2e0b7ae28297c82d046a8fa5f07a49b"
+    },
+    {
+      "path": "assets/ui/survivor_ellis.png",
+      "bytes": 88293,
+      "sha256": "491f118724f8d9b33f1cc391aed96ccb7f2bd78b0c2774c5788832ea83cc5e80"
+    },
+    {
+      "path": "assets/ui/survivor_mara.png",
+      "bytes": 86974,
+      "sha256": "323ebbad0a32bdde8ad4ddc87c3abefcca9f26d2107559486566ec411c768391"
+    },
+    {
+      "path": "assets/ui/weapon_hunting.png",
+      "bytes": 69185,
+      "sha256": "627ba398fbcadb6719bc97a477b18fc492881ad090d4c28bf092349490e71aaa"
+    },
+    {
+      "path": "assets/ui/weapon_pistol.png",
+      "bytes": 44545,
+      "sha256": "5dae76ed943203629111d11d574576fd7afe88d0dceac8bfc6b40d8f528ba428"
+    },
+    {
+      "path": "assets/ui/weapon_revolver.png",
+      "bytes": 44903,
+      "sha256": "fa67e41bc80c9aade5f590ac67e87d6250167306b98b280b0ed09e685fee2db4"
+    },
+    {
+      "path": "assets/ui/weapon_rifle.png",
+      "bytes": 72049,
+      "sha256": "959d17c99f9657f48a514f0b1fd4cda8fc1eb6370367229bad8fde0bde7d226d"
+    },
+    {
+      "path": "assets/ui/weapon_shotgun.png",
+      "bytes": 63635,
+      "sha256": "28c6d50b6a7233bd2527ae396383a892f84a5646f237d09f71d34bc6b3f7b43d"
+    },
+    {
+      "path": "assets/ui/weapon_smg.png",
+      "bytes": 53074,
+      "sha256": "442eceaa4d25a538260451654511ffab6372ec2aded627dec57960d6600fee91"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4668,
+      "sha256": "5172b204631900dcd3b781ada4ec64a5abfb9791fce7337f05c1c54e62fdc0c9"
+    }
+  ]
+}

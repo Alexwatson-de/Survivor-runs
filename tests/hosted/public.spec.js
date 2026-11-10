@@ -1,0 +1,29 @@
+import {test,expect} from '@playwright/test';
+const boot=async(page,{low=false,qa=false}={})=>{if(low)await page.addInitScript(()=>localStorage.setItem('survivor-runs.profile.v2',JSON.stringify({version:2,settings:{quality:'low',volume:0}})));await page.goto(qa?'/?qa=1':'/');await expect(page.locator('#loading')).toBeHidden({timeout:120000});};
+const hold=async(p,k,ms)=>{await p.keyboard.down(k);await p.waitForTimeout(ms);await p.keyboard.up(k);await p.waitForTimeout(350);};
+test('public normal launch: default rendering, movement/backtracking, jump/slide, fire/reload, map, pause and public credits',async({page},info)=>{
+ const errors=[],failed=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)failed.push({url:r.url(),status:r.status()});});await boot(page);expect(await page.evaluate(()=>typeof window.__SURVIVOR)).toBe('undefined');
+ await expect(page.locator('#footer')).toContainText('0.3.1');await page.locator('[data-start=""]').click();await page.waitForTimeout(500);expect(await page.locator('#distance').textContent()).toBe('0');await page.waitForTimeout(500);expect(await page.locator('#distance').textContent()).toBe('0');
+ await hold(page,'w',1100);const forward=Number(await page.locator('#distance').textContent());expect(forward).toBeGreaterThan(2);await hold(page,'s',900);expect(Number(await page.locator('#distance').textContent())).toBeGreaterThan(forward+1);
+ await hold(page,'d',550);await hold(page,'a',550);await page.keyboard.press('Space');await page.waitForTimeout(1000);await page.keyboard.press('Control');await page.waitForTimeout(1200);
+ const mag=Number(await page.locator('#mag').textContent());await page.keyboard.press('Enter');await expect(page.locator('#mag')).toHaveText(String(mag-1),{timeout:5000});await page.keyboard.press('r');await expect(page.locator('#mag')).toHaveText('12',{timeout:10000});
+ await page.keyboard.press('m');await expect(page.locator('#explorationMap')).toBeVisible();await page.keyboard.press('m');await expect(page.locator('#explorationMap')).toBeHidden();
+ const compass=await page.locator('#compass').textContent();await page.mouse.move(600,350);await page.mouse.down({button:'right'});await page.mouse.move(790,355,{steps:12});await page.mouse.up({button:'right'});await expect(page.locator('#compass')).not.toHaveText(compass);
+ await page.keyboard.press('p');await expect(page.locator('#resume')).toBeVisible();await page.locator('#resume').click();await page.screenshot({path:`artifacts/publishing/hosted-${info.project.name}-desktop.png`});
+ await page.keyboard.press('p');await page.locator('#leave').click();await page.locator('[data-page="settings"]').click();await expect(page.getByRole('link',{name:'Full software and asset credits'})).toBeVisible();const credits=await page.request.get('/assets/credits.txt');expect(credits.status()).toBe(200);expect(await credits.text()).toContain('julianmurcia245');expect(await credits.text()).toContain('Permission is hereby granted');expect(errors).toEqual([]);expect(failed).toEqual([]);
+});
+test('public phone emulation: responsive HUD, independent movement/look/fire, map and motion asset identity',async({browser},info)=>{
+ const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),page=await context.newPage(),errors=[];page.on('pageerror',e=>errors.push(e.message));await boot(page,{low:true,qa:true});await page.locator('[data-start=""]').tap();await page.waitForTimeout(400);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ const start=await page.evaluate(()=>({x:window.__SURVIVOR.run.x,s:window.__SURVIVOR.run.s}));const box=await page.locator('#steerpad').boundingBox(),x=box.x+box.width/2,y=box.y+box.height/2;
+ if(info.project.name==='chrome'){
+  const cdp=await context.newCDPSession(page),pt=(id,x,y)=>({id,x,y,radiusX:5,radiusY:5,force:1}),send=(type,p)=>cdp.send('Input.dispatchTouchEvent',{type,touchPoints:p});
+  await send('touchStart',[pt(1,x+22,y-25)]);await page.waitForTimeout(850);await send('touchStart',[pt(1,x+22,y-25),pt(2,280,350)]);await send('touchMove',[pt(1,x+22,y-25),pt(2,335,350)]);
+  const f=await page.locator('[data-action="fire"]').boundingBox();await send('touchStart',[pt(1,x+22,y-25),pt(2,335,350),pt(3,f.x+f.width/2,f.y+f.height/2)]);await page.waitForTimeout(150);await send('touchEnd',[]);
+ }else{
+  // WebKit has no public multi-touch drag API: real active mouse pad/RMB drag
+  // plus an actual emulated touch tap, not a physical-iPhone acceptance claim.
+  await page.mouse.move(x+22,y-25);await page.mouse.down();await page.waitForTimeout(1000);await page.mouse.up();await page.mouse.move(280,350);await page.mouse.down({button:'right'});await page.mouse.move(335,350,{steps:8});await page.mouse.up({button:'right'});await page.locator('[data-action="fire"]').tap();
+ }
+ await page.waitForTimeout(450);const s=await page.evaluate(()=>{const q=window.__SURVIVOR;return {x:q.run.x,s:q.run.s,yaw:q.run.viewYaw,speed:q.run.moveSpeed,shots:q.run.shots,model:q.lib.audit.find(a=>a.name==='survivor_cowboy')?.source,clips:Object.keys(q.view.player.actions)};});expect(s.x).toBeGreaterThan(start.x+.8);expect(s.s).toBeGreaterThan(start.s+1);expect(s.speed).toBeLessThan(.01);expect(Math.abs(s.yaw)).toBeGreaterThan(.1);expect(s.shots).toBeGreaterThan(0);expect(s.model).toBe('survivor_cowboy_motion.glb');for(const name of ['walk','run','sprint','jump','land','slide'])expect(s.clips).toContain(name);
+ await page.locator('[data-action="map"]').tap();await expect(page.locator('#explorationMap')).toBeVisible();await page.locator('[data-action="map"]').tap();await expect(page.locator('#explorationMap')).toBeHidden();await page.screenshot({path:`artifacts/publishing/hosted-${info.project.name}-mobile.png`});expect(errors).toEqual([]);await context.close();
+});
