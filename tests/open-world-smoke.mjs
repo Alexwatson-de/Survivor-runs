@@ -1,0 +1,12 @@
+import {chromium} from '@playwright/test';
+const browser=await chromium.launch({channel:'chrome',headless:true});
+const page=await browser.newPage({viewport:{width:1280,height:720}}),errors=[];
+page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+await page.goto('http://127.0.0.1:5190/?qa=1');
+await page.waitForFunction(()=>!!window.__SURVIVOR,{timeout:120000}).catch(async e=>{console.log(await page.locator('#loadtext').textContent(),errors);throw e;});
+await page.screenshot({path:'artifacts/open-world-menu.png'});await page.locator('[data-start=""]').click();await page.waitForTimeout(2000);
+console.log('loaded',await page.evaluate(()=>{const q=window.__SURVIVOR;return {...q.snapshot(),entities:q.run.entities.length,assets:q.lib.audit.slice(-3),bounds:Object.fromEntries(['survivor_cowboy','zombie_grim','zombie_melty'].map(n=>[n,q.lib.templates.get(n).object.scale.toArray()]))};}));
+await page.screenshot({path:'artifacts/open-world-game.png'});
+await page.keyboard.down('w');await page.waitForTimeout(1500);await page.keyboard.up('w');await page.waitForTimeout(500);
+console.log('moved',await page.evaluate(()=>{const r=window.__SURVIVOR.run;return {x:r.x,s:r.s,distance:r.distance,hp:r.hp};}));
+await page.keyboard.press('m');await page.screenshot({path:'artifacts/open-world-map.png'});console.log('errors',errors);await browser.close();if(errors.length)process.exitCode=1;

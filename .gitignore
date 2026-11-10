@@ -1,0 +1,24 @@
+# Survivor Runs publishing scope: source, runtime assets and editable artwork.
+# Never commit authentication, provider state, dependency caches or local reports.
+node_modules/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.log
+.DS_Store
+__pycache__/
+*.py[cod]
+test-results/
+playwright-report/
+# Generated captures and prior release ZIPs are not application source.
+artifacts/
+# Preserve the authoritative .blend files, not automatic save backups.
+*.blend[0-9]
+# Downloaded source archives are redundant with attributed extracted references.
+blender/upgrade/reference-base/*.zip

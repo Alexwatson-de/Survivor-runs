@@ -1,0 +1,6 @@
+{
+  "name":"survivor-runs", "version":"0.3.1", "private":true, "type":"module",
+  "scripts":{"dev":"vite --host 127.0.0.1 --port 5188","build":"vite build","preview":"vite preview --host 127.0.0.1 --port 5189","test":"node --test tests/overhaul/*.test.js","test:browser":"playwright test -c playwright.world.config.js","test:browser:legacy":"playwright test -c playwright.overhaul.config.js"},
+  "dependencies":{"three":"0.180.0"},
+  "devDependencies":{"@playwright/test":"1.56.1","vite":"8.3.5"}
+}

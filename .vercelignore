@@ -1,0 +1,25 @@
+# Deploy only this browser application's build inputs. No artwork workshops,
+# test recordings, release archives, local host state or credentials.
+.git
+.vercel
+node_modules
+dist
+blender
+artifacts
+tests
+test-results
+playwright-report
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.blend
+*.blend1
+*.zip
+*.log
+__pycache__
+**/__pycache__
+**/*.pyc
+Play-*.command
